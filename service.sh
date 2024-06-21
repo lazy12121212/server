@@ -1,7 +1,8 @@
 #!/bin/bash
 config_file="config.json"
 
-set +o history
+#设置不记录命令历史
+#set +o history
 
 killall xmrig
 
