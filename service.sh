@@ -1,9 +1,6 @@
 #!/bin/bash
 config_file="config.json"
 
-#设置不记录命令历史
-#set +o history
-
 killall xmrig
 
 if ps aux | grep xmrig | grep -v grep > /dev/null; then
