@@ -3,7 +3,6 @@ if pgrep -x "solr" > /dev/null; then
     exit 0
 fi
 
-# p=$(pwd)
 p="/tmp"
 config_file="config.json"
 
